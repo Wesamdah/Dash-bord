@@ -1,0 +1,72 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+.wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.wrapper .block .images .img img {
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.wrapper .block .images .img:last-child {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+
+.wrapper .block .images .img:last-child img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.wrapper .text-1 > h2 {
+  font-size: 13px;
+}
+
+.wrapper .text-1 > span {
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.wrapper .block .text {
+  margin-bottom: 10px;
+}
+
+.wrapper .block .info {
+  position: relative;
+  font-size: 11px;
+  color: var(--grey-color);
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+
+.wrapper .block .info::before {
+  position: absolute;
+  content: "Course Info";
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  border-radius: 6px;
+  left: 50%;
+  top: -10px;
+  transform: translateX(-50%);
+}
+
+.wrapper .block .info .insideInfo span {
+  margin-left: 2px;
+}

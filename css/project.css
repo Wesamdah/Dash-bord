@@ -1,0 +1,111 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+.wrapper .block .text-1 {
+  margin-bottom: 35px;
+}
+
+.wrapper .block .text-1 > span,
+.wrapper .block .lvlBar span {
+  font-size: 11px;
+  color: #a8dadc;
+  font-weight: bold;
+}
+
+.wrapper .block .text-1 > span:last-child {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 10px;
+}
+
+.wrapper .block .img img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.wrapper .block .img img:not(:first-child) {
+  margin-left: -13px;
+  border: 1px solid white;
+}
+
+.wrapper .block .skills {
+  padding: 15px 0;
+  margin-block: 15px;
+  text-align: end;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+}
+
+.wrapper .block .skills span {
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.wrapper .block .lvlBar .bar {
+  position: relative;
+  width: 60%;
+  height: 10px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+.wrapper .block .lvlBar .bar::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  border-radius: 6px;
+  left: 0;
+}
+
+.wrapper .block:first-child .lvlBar .bar::before {
+  background-color: #f44336;
+  width: 50%;
+}
+.wrapper .block:nth-child(2) .lvlBar .bar::before {
+  width: 80%;
+  background-color: #22c55e;
+}
+
+.wrapper .block:nth-child(3) .lvlBar .bar::before {
+  width: 100%;
+  background-color: #0075ff;
+}
+
+.wrapper .block:nth-child(4) .lvlBar .bar::before {
+  width: 60%;
+  background-color: #22c55e;
+}
+
+.wrapper .block:nth-child(5) .lvlBar .bar::before {
+  width: 70%;
+  background-color: #22c55e;
+}
+
+.wrapper .block:nth-child(6) .lvlBar .bar::before {
+  width: 40%;
+  background-color: #f44336;
+}
+
+.wrapper .block:nth-child(7) .lvlBar .bar::before {
+  width: 65%;
+  background-color: #22c55e;
+}
+
+.wrapper .block:nth-child(8) .lvlBar .bar::before {
+  width: 75%;
+  background-color: #22c55e;
+}
+
+.wrapper .block:last-child .lvlBar .bar::before {
+  width: 90%;
+  background-color: #22c55e;
+}

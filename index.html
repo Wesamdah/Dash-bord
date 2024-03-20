@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/ourframewprk.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dash-Board</title>
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-white p-20 pos-rel">
+        <div class="wide">
+          <input class="pos-rel" type="checkbox" id="wide" />
+          <label class="arrow-wide" for="wide">
+            <i class="fa-solid fa-arrow-left fa-fw gray"></i>
+            <i class="fa-solid fa-arrow-right fa-fw gray"></i>
+          </label>
+        </div>
+        <h3 class="mt-0 pos-rel txt-c">ELSA</h3>
+        <div class="profile d-flex">
+          <div class="img p-10">
+            <img
+              src="/imgs/portrait-young-businessman-with-mustache-glasses-3d-rendering.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text">
+            <h5 class="m-0">PRODUCT DESIGNER</h5>
+            <h4 class="m-0 txtc-black">Tushar Kan</h4>
+          </div>
+        </div>
+        <hr />
+        <span class="gray text-form p-10">main</span>
+        <ul>
+          <li class="pos-rel">
+            <a class="active p-10 rad-6 gray mt-0" href="index.html">
+              <i class="fa-solid fa-qrcode fa-fw"></i>
+              <span class="txt-gray">Dashboard</span>
+            </a>
+            <input type="checkbox" id="btn" />
+            <label class="icons" for="btn"
+              ><i class="fa-solid fa-arrow-up fa-fw"></i
+              ><i class="fa-solid fa-arrow-down"></i
+            ></label>
+            <div class="extra txt-gray pos-rel">
+              <ul>
+                <li class="p-10">Activity</li>
+                <li class="p-10">Travic</li>
+                <li class="p-10 mb-0">Static</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="p-10 rad-6 gray mt-0" href="settings.html">
+              <i class="fa-solid fa-gears fa-fw"></i>
+              <span class="txt-gray">Settings</span>
+            </a>
+          </li>
+          <li class="pt-10 mt-10">
+            <a class="p-10 rad-6 gray" href="profile.html">
+              <i class="fa-solid fa-user fa-fw"></i>
+              <span class="txt-gray">Profile</span>
+            </a>
+          </li>
+          <li class="pt-10 mt-10">
+            <a class="p-10 rad-6 gray" href="projet.html">
+              <i class="fa-solid fa-code-merge fa-fw"></i>
+              <span class="txt-gray">Projects</span>
+            </a>
+          </li>
+          <li class="pt-10 mt-10">
+            <a class="p-10 rad-6 gray" href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="txt-gray">Courses</span>
+            </a>
+          </li>
+          <li class="pt-10 mt-10">
+            <a class="p-10 rad-6 gray" href="friends.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="txt-gray">Friends</span>
+            </a>
+          </li>
+        </ul>
+        <hr class="hr1" />
+        <span class="gray text-form p-10">Messages</span>
+        <div class="friends d-flex mt-10">
+          <div class="img p-10 pos-rel m-10 mb-0 mt-0">
+            <img
+              src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+              alt=""
+            />
+          </div>
+          <h4 class="mt-0 pt-10 d-flex align-c txt-gray">Shalo Grid</h4>
+        </div>
+        <div class="friends d-flex">
+          <div class="img p-10 pos-rel m-10 mb-0 mt-0">
+            <img
+              src="/imgs/portrait-young-woman-wearing-glasses-3d-rendering.jpg"
+              alt=""
+            />
+          </div>
+          <h4 class="mt-0 pt-10 d-flex align-c txt-gray">Sara Smith</h4>
+        </div>
+        <div class="friends d-flex">
+          <div class="img p-10 pos-rel m-10 mb-0 mt-0">
+            <img
+              src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+              alt=""
+            />
+          </div>
+          <h4 class="mt-0 pt-10 d-flex align-c txt-gray">Malek White</h4>
+        </div>
+      </div>
+      <div class="content">
+        <div class="header-bar bg-white bettwen-flex p-15">
+          <div class="search pos-rel">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="info d-flex pos-rel">
+            <span>
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <div class="img">
+              <img
+                src="/imgs/portrait-young-businessman-with-mustache-glasses-3d-rendering.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <h1 class="pos-rel">Dashboard</h1>
+        <div class="wrapper d-grid gap-20 pos-rel">
+          <div class="welcome txt-c-mob d-block-mob bg-white pos-rel rad-10">
+            <div class="back-img pos-rel">
+              <img src="/imgs/empolyess.png" alt="" />
+            </div>
+            <div class="text-1">
+              <h2>Welcome</h2>
+              <span> Kan</span>
+            </div>
+            <div class="info pos">
+              <hr />
+              <div class="data d-flex">
+                <div class="text-2 txt-c">
+                  <p>Tushar Kan</p>
+                  <span>Developer</span>
+                </div>
+                <div class="text-2 txt-c">
+                  <p>80</p>
+                  <span>Projects</span>
+                </div>
+                <div class="text-2 txt-c">
+                  <p>$8500</p>
+                  <span>Earned</span>
+                </div>
+              </div>
+              <hr />
+              <div class="link">
+                <a class="btn-shape" href="profile.html">Profile</a>
+              </div>
+            </div>
+          </div>
+          <div class="quick txt-c-mob d-block-mob pos-rel rad-10 bg-white">
+            <div class="text-1 p-15 pt-0">
+              <h2>Quick Draft</h2>
+              <span>Write A Draft For Your Ideas</span>
+            </div>
+            <div class="input p-15">
+              <input class="w-full rad-6" type="text" placeholder="title" />
+              <textarea
+                class="w-full rad-6 p-15"
+                placeholder="Your Thought"
+              ></textarea>
+              <div class="d-flex">
+                <input class="btn btn-shape" type="submit" value="Save" />
+              </div>
+            </div>
+          </div>
+          <div class="target d-block-mob bg-white rad-10">
+            <div class="text-1 p-15 txt-c-mob pt-0">
+              <h2>Yearly Targets</h2>
+              <span>Targets Of The Year</span>
+            </div>
+            <div class="info test-1 d-flex p-15">
+              <div class="data-1 bg-blue"></div>
+              <div class="data-2 w-full">
+                <span>Money</span>
+                <h4>$20.000</h4>
+                <div class="bar bg-blue pos-rel w-full">
+                  <div class="width pos-rel one" style="width: 80%">
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info test-2 d-flex p-15">
+              <div class="data-1 bg-orange"></div>
+              <div class="data-2 w-full">
+                <span>Projects</span>
+                <h4>24</h4>
+                <div class="bar bg-orange pos-rel w-full">
+                  <div class="width pos-rel two" style="width: 55%">
+                    <span>55%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info test-3 d-flex p-15">
+              <div class="data-1 bg-green"></div>
+              <div class="data-2 w-full">
+                <span>Team</span>
+                <h4>12</h4>
+                <div class="bar bg-green pos-rel w-full">
+                  <div class="width pos-rel three" style="width: 75%">
+                    <span>75%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ticket bg-white rad-10 d-block-mob txt-c-mob">
+            <div class="text-1 p-15 pt-0">
+              <h2>Tickets Statistics</h2>
+              <span>Everythings About Support Tickets</span>
+            </div>
+            <div class="blocks d-grid gap-20 d-block-mob txt-c-mob p-15">
+              <div class="card one p-15 txt-c">
+                <i class="fa-regular fa-newspaper"></i>
+                <h4>2500</h4>
+                <span>Total</span>
+              </div>
+              <div class="card two p-15 txt-c">
+                <i class="fa-solid fa-spinner"></i>
+                <h4>500</h4>
+                <span>Pending</span>
+              </div>
+              <div class="card three p-15 txt-c">
+                <i class="fa-regular fa-circle-check"></i>
+                <h4>1900</h4>
+                <span>Closed</span>
+              </div>
+              <div class="card four p-15 txt-c">
+                <i class="fa-regular fa-rectangle-xmark"></i>
+                <h4>1000</h4>
+                <span>Deleted</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="latest-news bg-white rad-10 d-block-mob txt-c-mob pos-rel"
+          >
+            <div class="text-1 p-15">
+              <h2 class="mt-0">latest News</h2>
+            </div>
+            <div class="blocks">
+              <div class="news d-flex pos-rel">
+                <div class="img">
+                  <img class="rad-6" src="/imgs/light.jpg" alt="" />
+                </div>
+                <div class="block">
+                  <h2 class="mt-0">Created SASS Section</h2>
+                  <span>New SASS Examples & Tutorials</span>
+                  <span class="rad-6 d-block-mob">3 Days Ago</span>
+                </div>
+              </div>
+              <div class="news d-flex pos-rel">
+                <div class="img">
+                  <img class="rad-6" src="/imgs/bluebook.jpg" alt="" />
+                </div>
+                <div class="block">
+                  <h2 class="mt-0">Changed The Design</h2>
+                  <span>A Brand New Website Design</span>
+                  <span class="rad-6 d-block-mob">5 Days Ago</span>
+                </div>
+              </div>
+              <div class="news d-flex pos-rel">
+                <div class="img">
+                  <img class="rad-6" src="/imgs/library.jpg" alt="" />
+                </div>
+                <div class="block">
+                  <h2 class="mt-0">Team Increased</h2>
+                  <span>3 Developer Joinde The Team</span>
+                  <span class="rad-6 d-block-mob">7 Days Ago</span>
+                </div>
+              </div>
+              <div class="news d-flex pos-rel">
+                <div class="img">
+                  <img class="rad-6" src="/imgs/room.jpg" alt="" />
+                </div>
+                <div class="block">
+                  <h2 class="mt-0">Added Payment Gateway</h2>
+                  <span>Many Payment Gateway Added</span>
+                  <span class="rad-6 d-block-mob">9 Days Ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="latest-tasks rad-10 p-15 bg-white d-block-mob txt-c-mob">
+            <div class="text-1">
+              <h2 class="mt-0">Latest Tasks</h2>
+            </div>
+            <div class="blocks">
+              <div class="block">
+                <h4>Record One New Video</h4>
+                <div class="text d-flex">
+                  <span>Record Python Create Exe Project</span>
+                  <i class="fa-solid fa-trash-can fa-fw"></i>
+                </div>
+              </div>
+              <div class="block">
+                <h4>Write Article</h4>
+                <div class="text d-flex">
+                  <span>Write Low Level VS High Level Languages</span>
+                  <i class="fa-solid fa-trash-can fa-fw"></i>
+                </div>
+              </div>
+              <div class="block">
+                <h4>Finish Project</h4>
+                <div class="text d-flex">
+                  <span>Publish Academy Programming Project</span>
+                  <i class="fa-solid fa-trash-can fa-fw"></i>
+                </div>
+              </div>
+              <div class="block">
+                <h4>Attend The Meeting</h4>
+                <div class="text d-flex">
+                  <span>Attedn The Project Busniess Meeting</span>
+                  <i class="fa-solid fa-trash-can fa-fw"></i>
+                </div>
+              </div>
+              <div class="block">
+                <h4>Finish Lesson</h4>
+                <div class="text d-flex">
+                  <span>Finish Teaching Flex Box</span>
+                  <i class="fa-solid fa-trash-can fa-fw"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-search p-15 rad-10 d-block-mob txt-c-mob bg-white">
+            <div class="text-1">
+              <h2 class="mt-0">Top Search Items</h2>
+              <div class="bettwen-flex text-1">
+                <span>Keyword</span>
+                <span>Search Count</span>
+              </div>
+            </div>
+            <div class="data bettwen-flex">
+              <span>Programming</span>
+              <span>220</span>
+            </div>
+            <div class="data bettwen-flex">
+              <span>JavaScript</span>
+              <span>180</span>
+            </div>
+            <div class="data bettwen-flex">
+              <span>PHP</span>
+              <span>160</span>
+            </div>
+            <div class="data bettwen-flex">
+              <span>Code</span>
+              <span>145</span>
+            </div>
+            <div class="data bettwen-flex">
+              <span>Design</span>
+              <span>110</span>
+            </div>
+            <div class="data bettwen-flex">
+              <span>Logic</span>
+              <span>95</span>
+            </div>
+          </div>
+          <div class="latest-upload bg-white p-15 rad-10 d-block-mob txt-c-mob">
+            <div class="text-1">
+              <h2 class="mt-0">Latest Uploads</h2>
+            </div>
+            <div class="blocks">
+              <div class="block d-flex pos-rel">
+                <div class="img">
+                  <img src="/imgs/pdf.png" alt="" />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">my-file.pdf</h4>
+                  <span>Elsa</span>
+                  <span>2.9mb</span>
+                </div>
+              </div>
+              <div class="block d-flex pos-rel">
+                <div class="img">
+                  <img src="/imgs/avi.png" alt="" />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">my-video-file.avi</h4>
+                  <span>Admin</span>
+                  <span>4.9mb</span>
+                </div>
+              </div>
+              <div class="block d-flex pos-rel">
+                <div class="img">
+                  <img src="/imgs/PSD.png" alt="" />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">my-psd-file.pdf</h4>
+                  <span>Wessam</span>
+                  <span>4.5mb</span>
+                </div>
+              </div>
+              <div class="block d-flex pos-rel">
+                <div class="img">
+                  <img src="/imgs/zip.png" alt="" />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">my-zip-file.pdf</h4>
+                  <span>User </span>
+                  <span>8.9mb</span>
+                </div>
+              </div>
+              <div class="block d-flex pos-rel">
+                <div class="img">
+                  <img src="/imgs/dll.png" alt="" />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">my-dll-file.pdf</h4>
+                  <span>Admin</span>
+                  <span>4.9mb</span>
+                </div>
+              </div>
+              <div class="block d-flex pos-rel">
+                <div class="img">
+                  <img src="/imgs/eps-icon.png" alt="" />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">my-eps-file.pdf</h4>
+                  <span>Designer</span>
+                  <span>9.8mb</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project bg-white p-15 txt-c-mob d-block-mob rad-10">
+            <div class="text-1">
+              <h2 class="mt-0">Last Project Progress</h2>
+            </div>
+            <div class="blocks">
+              <div class="block d-flex">
+                <div class="circle pos-rel"></div>
+                <span>Got The Project</span>
+              </div>
+              <div class="block d-flex">
+                <div class="circle pos-rel"></div>
+                <span>Started The Project</span>
+              </div>
+              <div class="block d-flex">
+                <div class="circle pos-rel"></div>
+                <span>The Project About Finish</span>
+              </div>
+              <div class="block d-flex">
+                <div class="circle pos-rel"></div>
+                <span>Test The Project</span>
+              </div>
+              <div class="block d-flex">
+                <div class="circle pos-rel"></div>
+                <span>Finish The Project & Get Money</span>
+              </div>
+            </div>
+            <div class="img d-flex">
+              <img src="/imgs/rocet.png" alt="" />
+            </div>
+          </div>
+          <div class="reminder bg-white rad-10 p-15 d-block-mob txt-c-mob">
+            <div class="text-1">
+              <h2 class="mt-0">Remindes</h2>
+            </div>
+            <div class="blocks">
+              <div class="block d-flex">
+                <div class="circle"></div>
+                <div class="data pos-rel">
+                  <span>Check My Task List</span>
+                  <span>28/09/2022 - 12:00am</span>
+                </div>
+              </div>
+              <div class="block d-flex">
+                <div class="circle"></div>
+                <div class="data pos-rel">
+                  <span>Check My Project</span>
+                  <span>26/10/2022 - 12:00am</span>
+                </div>
+              </div>
+              <div class="block d-flex">
+                <div class="circle"></div>
+                <div class="data pos-rel">
+                  <span>Call All My Clients</span>
+                  <span>5/11/2022 - 12:00am</span>
+                </div>
+              </div>
+              <div class="block d-flex">
+                <div class="circle"></div>
+                <div class="data pos-rel">
+                  <span>Finish The Development Workshop</span>
+                  <span>20/12/2022 - 12:00am</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="posts bg-white rad-10 p-15 txt-c-mob d-block-mob">
+            <div class="text-1">
+              <h2 class="mt-0">Latest Post</h2>
+              <div class="block-1 d-flex txt-c-mob d-block-mob">
+                <div class="img">
+                  <img
+                    src="/imgs/portrait-young-businessman-with-mustache-glasses-3d-rendering.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="data">
+                  <h4 class="mt-0 mb-0">Tushar Kan</h4>
+                  <span>About 3 Hours Ago</span>
+                </div>
+              </div>
+              <div class="block-2">
+                <span
+                  >you can fool all of people some of time , and some of the
+                  people all of the time , but you can't fool all of the people
+                  all of the time</span
+                >
+              </div>
+              <div class="block-3 bettwen-flex">
+                <div class="data d-flex align-c">
+                  <i class="fa-regular fa-heart"></i>
+                  <span>1.8K</span>
+                </div>
+                <div class="data d-flex align-c">
+                  <i class="fa-regular fa-comments"></i>
+                  <span>500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social bg-white rad-10 p-15 d-block-mob txt-c-mob">
+            <div class="text-1 mt-0">
+              <h2 class="mt-0">Social Media Stats</h2>
+            </div>
+            <div class="blocks align-c">
+              <div class="block d-flex">
+                <div class="icon">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="data bettwen-flex w-full rad-10">
+                  <span>90K Followers</span>
+                  <span class="rad-6">Follow</span>
+                </div>
+              </div>
+              <div class="block d-flex">
+                <div class="icon">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="data bettwen-flex w-full rad-10">
+                  <span>2M Likes</span>
+                  <span class="rad-6">Like</span>
+                </div>
+              </div>
+              <div class="block d-flex">
+                <div class="icon">
+                  <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="data bettwen-flex w-full rad-10">
+                  <span>1M Subs</span>
+                  <span class="rad-6">Subscribe</span>
+                </div>
+              </div>
+              <div class="block d-flex">
+                <div class="icon">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <div class="data bettwen-flex w-full rad-10">
+                  <span>70K Followers</span>
+                  <span class="rad-6">Follow</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="table bg-white rad-10 p-15">
+          <div class="text-1">
+            <h2 class="mt-0">Projects</h2>
+          </div>
+          <div class="form">
+            <table class="w-full">
+              <tr>
+                <th>Name</th>
+                <th>Finish Date</th>
+                <th class="hide-mobile">Client</th>
+                <th class="hide-mobile">Price</th>
+                <th class="hide-mobile">Team</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>Ministry Wikipedia</td>
+                <td>10 May 2022</td>
+                <td class="hide-mobile">Ministry</td>
+                <td class="hide-mobile">$5300</td>
+                <td class="hide-mobile">
+                  <div class="img">
+                    <img
+                      src="/imgs/portrait-young-businessman-with-mustache-glasses-3d-rendering.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/portrait-young-woman-wearing-glasses-3d-rendering.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td><span>Pending</span></td>
+              </tr>
+              <tr>
+                <td>Elsa Shop</td>
+                <td>12 Oct 2021</td>
+                <td class="hide-mobile">Elsa Company</td>
+                <td class="hide-mobile">$1500</td>
+                <td class="hide-mobile">
+                  <div class="img">
+                    <img
+                      src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/portrait-young-woman-wearing-glasses-3d-rendering.jpg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td><span>In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Bouba App</td>
+                <td>05 Sep 2021</td>
+                <td class="hide-mobile">Bouba</td>
+                <td class="hide-mobile">$800</td>
+                <td class="hide-mobile">
+                  <div class="img">
+                    <img
+                      src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td><span>Completed</span></td>
+              </tr>
+              <tr>
+                <td>Mahmoud Website</td>
+                <td>22 May 2021</td>
+                <td class="hide-mobile">Mahmoud</td>
+                <td class="hide-mobile">$600</td>
+                <td class="hide-mobile">
+                  <div class="img">
+                    <img
+                      src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td><span>Completed</span></td>
+              </tr>
+              <tr>
+                <td>Sayed Website</td>
+                <td>24 May 2021</td>
+                <td class="hide-mobile">Sayed</td>
+                <td class="hide-mobile">$300</td>
+                <td class="hide-mobile">
+                  <div class="img">
+                    <img
+                      src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td><span>Rejected</span></td>
+              </tr>
+              <tr>
+                <td>Arena Application</td>
+                <td>01 Mar 2021</td>
+                <td class="hide-mobile">Arena Company</td>
+                <td class="hide-mobile">$2600</td>
+                <td class="hide-mobile">
+                  <div class="img">
+                    <img
+                      src="/imgs/3d-illustration-cute-cartoon-girl-blue-jacket-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/3d-illustration-teenager-with-funny-face-glasses.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/portrait-young-businessman-with-mustache-glasses-3d-rendering.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="/imgs/portrait-young-woman-wearing-glasses-3d-rendering.jpg"
+                      alt=""
+                    />
+                  </div>
+                </td>
+                <td><span>Completed</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/main.js"></script>
+  </body>
+</html>

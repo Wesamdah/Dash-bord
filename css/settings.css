@@ -1,0 +1,309 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+.wrapper .site .block-1 h4 {
+  font-weight: 400;
+}
+
+.wrapper .site .block-1 span {
+  color: var(--grey-color);
+  font-size: 14px;
+}
+
+.wrapper .site .block-2 input,
+.wrapper .security .block-2 input {
+  display: none;
+}
+
+.wrapper .site .block-2 .circle,
+.wrapper .security .block-2 .circle {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #cce3ff;
+  transition: 0.5s;
+}
+
+:has(#press:checked) .wrapper .site .block-2 .circle,
+:has(#press-2:checked) .wrapper .security .block-2 .circle {
+  background-color: var(--blue-color);
+}
+
+.wrapper .site .block-2 .circle::before,
+.wrapper .security .block-2 .circle::before {
+  position: absolute;
+  content: "";
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+:has(#press:checked) .wrapper .site .block-2 .circle::before,
+:has(#press-2:checked) .wrapper .security .block-2 .circle::before {
+  left: 60px;
+  transition: 0.5s;
+}
+
+.wrapper .site .block-2 .circle::after,
+.wrapper .security .block-2 .circle::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  position: absolute;
+  font-weight: 900;
+  left: 12px;
+  color: var(--blue-color);
+  transform: translateY(50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+:has(#press:checked) .wrapper .site .block-2 .circle::after,
+:has(#press-2:checked) .wrapper .security .block-2 .circle::after {
+  left: 72px;
+  transition: 0.5s;
+}
+
+.wrapper .site textarea {
+  resize: none;
+  border: solid 1px #eee;
+  margin: 20px 0;
+  min-height: 100px;
+  padding: 10px;
+  color: var(--grey-color);
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .wrapper .site .block-1 span {
+    font-size: 11px;
+  }
+  .wrapper .site .block-2 .circle {
+    width: 70px;
+  }
+  :has(#press:checked) .wrapper .site .block-2 .circle::before {
+    left: 30px;
+  }
+  :has(#press:checked) .wrapper .site .block-2 .circle::after {
+    left: 42px;
+  }
+}
+
+.wrapper .general .block {
+  color: var(--grey-color);
+  margin-bottom: 10px;
+}
+
+.wrapper .general .block span {
+  font-size: 13px;
+}
+
+.wrapper .general .block input {
+  display: block;
+  margin-top: 10px;
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  color: var(--grey-color);
+}
+
+.wrapper .general .blocks #myForm {
+  width: 80%;
+}
+
+.wrapper .general .block:last-child span:last-child {
+  color: var(--blue-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper .general .block input:focus {
+  border-color: var(--grey-color);
+}
+
+.wrapper .general .block input:focus::placeholder {
+  transform: translateX(100%) scale(0);
+  transition: 1s;
+}
+
+.wrapper .security .blocks {
+  margin-top: 15px;
+}
+
+.wrapper .security .blocks .block:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+}
+.wrapper .security .blocks .block:not(:first-child) {
+  margin-top: 20px;
+}
+
+.wrapper .security .block-1 span:first-child {
+  font-size: 16px;
+}
+
+.wrapper .security .block-1 span:last-child {
+  display: block;
+  margin-top: 5px;
+  color: var(--grey-color);
+  font-size: 13px;
+}
+
+.wrapper .security .block:first-child .block-2 {
+  background-color: var(--blue-color);
+  color: white;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.wrapper .security .block:last-child .block-2 {
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.wrapper .social-info .block {
+  margin-top: 15px;
+  border: 1px solid var(--grey-color);
+
+  border-radius: 6px;
+  background-color: #f6f6f6;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.wrapper .social-info .block i {
+  color: var(--grey-color);
+  padding: 0 10px;
+  padding: 8px;
+  font-size: 18px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .social-info .block a {
+  font-size: 15px;
+  line-height: 1;
+  padding: 8px;
+  border-left: 1px solid #ddd;
+  color: var(--grey-color);
+}
+
+.wrapper .widgets .blocks,
+.wrapper .backup .blocks {
+  margin-top: 15px;
+}
+
+.wrapper .widgets .block,
+.wrapper .backup .block {
+  margin-bottom: 15px;
+}
+
+.wrapper .widgets .block input,
+.wrapper .backup .block input {
+  margin-right: 10px;
+}
+
+.wrapper .backup .blocks:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.wrapper .backup .block {
+  align-items: center;
+}
+
+.wrapper .backup .block:last-child {
+  padding-bottom: 10px;
+}
+
+.wrapper .backup .block input {
+  width: 18px;
+  height: 18px;
+}
+
+.wrapper .backup .block-1 input {
+  display: none;
+}
+
+.wrapper .backup .block-1 {
+  width: 25%;
+  height: 70px;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.wrapper .backup .block-1 i {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper .backup .block-1 i,
+.wrapper .backup .block-1 span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+:has(#choose-21:checked) .wrapper .backup .block-1:first-child,
+:has(#choose-22:checked) .wrapper .backup .block-1:nth-child(2),
+:has(#choose-23:checked) .wrapper .backup .block-1:last-child {
+  border-color: var(--blue-color);
+}
+
+@media (max-width: 767px) {
+  .wrapper .backup .blocks:not(:last-child) {
+    margin-top: 25px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 767px) {
+  .wrapper .social-info .block:first-child:hover i {
+    color: #1da1f2;
+  }
+  .wrapper .social-info .block:nth-child(2):hover i {
+    color: #3b5998;
+  }
+  .wrapper .social-info .block:nth-child(3):hover i {
+    color: #0a66c2;
+  }
+  .wrapper .social-info .block:last-child:hover i {
+    color: #c4302b;
+  }
+  .wrapper .security .block:last-child .block-2:hover {
+    background-color: #ddd;
+  }
+  .wrapper .security .block:first-child .block-2:hover {
+    background-color: var(--blue-alt-color);
+  }
+  .wrapper .general .blocks .block:last-child span:hover {
+    color: var(--blue-alt-color);
+  }
+}
