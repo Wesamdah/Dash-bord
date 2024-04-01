@@ -6,6 +6,10 @@
   --grey-color: #888;
 }
 
+.sidebar ul li:first-child a {
+  padding-right: 30px;
+}
+
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }

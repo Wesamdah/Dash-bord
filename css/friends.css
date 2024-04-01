@@ -6,6 +6,10 @@
   --grey-color: #888;
 }
 
+.sidebar ul li:first-child a {
+  padding-right: 30px;
+}
+
 .wrapper {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
@@ -26,7 +30,8 @@
 }
 
 .wrapper .block .icons i:hover {
-  font-size: 15px;
+  color: var(--blue-alt-color);
+  transform: scale(1.1);
   transition: 0.3s;
 }
 
@@ -173,7 +178,7 @@
   font-weight: 500;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1473px) {
   .wrapper .block .date {
     display: block;
     text-align: center;

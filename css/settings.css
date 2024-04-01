@@ -6,6 +6,10 @@
   --grey-color: #888;
 }
 
+.sidebar ul li:first-child a {
+  padding-right: 30px;
+}
+
 .wrapper .site .block-1 h4 {
   font-weight: 400;
 }

@@ -6,6 +6,19 @@
   --grey-color: #888;
 }
 
+.sidebar ul li:first-child a {
+  padding-right: 30px;
+}
+
+/* .sidebar .icons .fa-arrow-down {
+  right: 15px;
+  top: 5px;
+}
+.sidebar .icons .fa-arrow-up {
+  right: 10px;
+  top: 5px;
+} */
+
 .content .data {
   margin: 0 15px;
   align-items: center;
@@ -26,6 +39,12 @@
 .content .myInfo h4 {
   margin-top: 5px;
   margin-bottom: 12px;
+}
+
+@media (max-width: 1195px) {
+  .content .myInfo h4 {
+    font-size: 15px;
+  }
 }
 
 .content .myInfo .lvlBar {
@@ -138,6 +157,29 @@
   transition: 0.5s;
 }
 
+@media (max-width: 1128px) {
+  .content .myData .info:last-child .circle-1,
+  .content .myData .info:last-child .circle-2,
+  .content .myData .info:last-child .circle-3,
+  .content .myData .info:last-child .circle-4 {
+    width: 80px;
+  }
+
+  :has(#press:checked) .content .myData .info:last-child .circle-1::before,
+  :has(#press-1:checked) .content .myData .info:last-child .circle-2::before,
+  :has(#press-2:checked) .content .myData .info:last-child .circle-3::before,
+  :has(#press-3:checked) .content .myData .info:last-child .circle-4::before {
+    left: 50px;
+  }
+
+  :has(#press:checked) .content .myData .info:last-child .circle-1::after,
+  :has(#press-1:checked) .content .myData .info:last-child .circle-2::after,
+  :has(#press-2:checked) .content .myData .info:last-child .circle-3::after,
+  :has(#press-3:checked) .content .myData .info:last-child .circle-4::after {
+    left: 60px;
+  }
+}
+
 .content .data .myData {
   border-left: 1px solid #eee;
 }
@@ -170,6 +212,11 @@
   width: 175px;
 }
 
+.content .data .blocks .info:nth-child(3) {
+  width: 125px;
+  margin-right: 10px;
+}
+
 .content .data .myData .info:last-child {
   display: inline-block;
 }
@@ -182,6 +229,19 @@
 .content .data .blocks .info span:last-child {
   font-size: 12px;
   font-weight: 500;
+}
+
+@media (max-width: 1128px) {
+  .content .data .blocks .info span:first-child {
+    font-size: 12px;
+    display: block;
+    text-align: center;
+  }
+  .content .data .blocks .info span:last-child {
+    font-size: 11px;
+    display: block;
+    text-align: center;
+  }
 }
 
 .content .wrapper {
@@ -299,6 +359,17 @@
   }
 }
 
+@media (max-width: 977px) {
+  .wrapper .activites .block .info {
+    margin-left: 6px;
+  }
+
+  .wrapper .activites .block .info span:last-child,
+  .wrapper .activites .block .date span:last-child {
+    font-size: 13px;
+  }
+}
+
 @media (max-width: 860px) {
   .content .data .blocks .info span:first-child,
   .content .data .blocks .info span:last-child {
@@ -315,16 +386,19 @@
     height: 70px;
   }
   .content .myInfo h4 {
-    font-size: 7px;
+    font-size: 15px;
     margin-top: 5px;
     margin-bottom: 0;
   }
   .content .myInfo span:first-of-type {
-    font-size: 11px;
+    font-size: 15px;
   }
   .content .myInfo .stars {
-    font-size: 5px;
+    font-size: 10px;
     margin-bottom: 7px;
+  }
+  .content .myInfo span:last-of-type {
+    font-size: 15px;
   }
 
   .content .myData .info:last-child .circle-1,
@@ -376,6 +450,15 @@
   }
 }
 
+@media (max-width: 638px) {
+  .wrapper .activites .block {
+    display: block;
+  }
+  .wrapper .activites .block .sub-block {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 460px) {
   .content .myInfo .img img {
     width: 40px;
@@ -403,6 +486,6 @@
 
   .wrapper .activites .block {
     padding-left: 0;
-    font-size: 8px;
+    font-size: 15px;
   }
 }

@@ -6,6 +6,10 @@
   --grey-color: #888;
 }
 
+.sidebar ul li:first-child a {
+  padding-right: 30px;
+}
+
 .wrapper .block .text-1 {
   margin-bottom: 35px;
 }
@@ -108,4 +112,41 @@
 .wrapper .block:last-child .lvlBar .bar::before {
   width: 90%;
   background-color: #22c55e;
+}
+
+@media (max-width: 1500px) {
+  .wrapper .block:nth-child(7) span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1418px) {
+  .wrapper .block:nth-child(1) span,
+  .wrapper .block:nth-child(2) span,
+  .wrapper .block:nth-child(4) span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .wrapper .block .text-1 span {
+    font-size: 12px;
+  }
+  .wrapper .block:nth-child(1) span,
+  .wrapper .block:nth-child(2) span,
+  .wrapper .block:nth-child(4) span {
+    font-size: 10px;
+  }
+  .wrapper .block:nth-child(7) span {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 985px) {
+  .wrapper .block .text-1 span {
+    font-size: 15px;
+  }
+  .wrapper .block .text-1 {
+    margin-top: 10px;
+  }
 }
